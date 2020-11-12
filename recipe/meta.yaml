@@ -21,11 +21,11 @@ requirements:
     - dnspython >=1.15.0
     - idna >=2.0.0
     - pip
-    - python
+    - python >=3.5
   run:
     - dnspython >=1.15.0
     - idna >=2.0.0
-    - python
+    - python >=3.5
 
 test:
   source_files:
