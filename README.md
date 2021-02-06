@@ -7,7 +7,7 @@ Package license: CC0-1.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/email-validator-feedstock/blob/master/LICENSE.txt)
 
-Summary: A robust email syntax and deliverability validation library for Python 2.x/3.x.
+Summary: A robust email syntax and deliverability validation library for 3.x.
 
 Development: https://github.com/JoshData/python-email-validator
 
@@ -32,6 +32,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-email--validator-green.svg)](https://anaconda.org/conda-forge/email-validator) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/email-validator.svg)](https://anaconda.org/conda-forge/email-validator) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/email-validator.svg)](https://anaconda.org/conda-forge/email-validator) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/email-validator.svg)](https://anaconda.org/conda-forge/email-validator) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-email_validator-green.svg)](https://anaconda.org/conda-forge/email_validator) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/email_validator.svg)](https://anaconda.org/conda-forge/email_validator) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/email_validator.svg)](https://anaconda.org/conda-forge/email_validator) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/email_validator.svg)](https://anaconda.org/conda-forge/email_validator) |
 
 Installing email-validator
 ==========================
@@ -42,10 +43,10 @@ Installing `email-validator` from the `conda-forge` channel can be achieved by a
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `email-validator` can be installed with:
+Once the `conda-forge` channel has been enabled, `email-validator, email_validator` can be installed with:
 
 ```
-conda install email-validator
+conda install email-validator email_validator
 ```
 
 It is possible to list all of the versions of `email-validator` available on your platform with:
@@ -118,5 +119,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@xylar](https://github.com/xylar/)
 
