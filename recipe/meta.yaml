@@ -22,10 +22,10 @@ outputs:
     script: build_email_validator.sh
     requirements:
       host:
-        - python >=3.5
+        - python >=3.7
         - pip
       run:
-        - python >=3.5
+        - python >=3.7
         - idna >=2.0.0
         - dnspython >=1.15.0
     test:
