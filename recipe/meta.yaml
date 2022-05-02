@@ -1,5 +1,5 @@
 {% set name = "email-validator" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}-meta
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/JoshData/python-email-validator/archive/v{{ version }}.tar.gz
-  sha256: ab0069140da2fea913262102b39c9dd037d3fa3534094a90507586d7fc97689a
+  sha256: 1ac47d82c6f6b924f4cde3cf1dbd24249d2272ba338ad2aedc616838fd8d88bd
 
 build:
   number: 0
