@@ -1,11 +1,11 @@
-About email-validator
-=====================
+About email-validator-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/email-validator-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/JoshData/python-email-validator
 
 Package license: CC0-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/email-validator-feedstock/blob/main/LICENSE.txt)
 
 Summary: A robust email syntax and deliverability validation library for 3.x.
 
