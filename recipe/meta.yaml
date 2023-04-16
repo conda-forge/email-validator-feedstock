@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/JoshData/python-email-validator/archive/v{{ version }}.tar.gz
-  sha256: 3a34d9b8044aa37de12a2e6ddf485ff036b41cc33ba67961bea6c5f0e3d560ba
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/email_validator-{{ version }}.tar.gz
+  sha256: f4904f4145c11f8de5897afbb8d7db4b465c57f13db1c8c106c16d02bceebd9a
 
 build:
   number: 0
@@ -26,8 +26,8 @@ outputs:
         - pip
       run:
         - python >=3.7
+        - dnspython >=2.0.0
         - idna >=2.0.0
-        - dnspython >=1.15.0
     test:
       source_files:
         - tests
