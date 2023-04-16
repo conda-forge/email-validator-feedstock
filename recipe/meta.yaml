@@ -40,7 +40,7 @@ outputs:
       imports:
         - email_validator
       commands:
-        - email_validator --help
+        - email_validator blah@blah.com
         - pytest --cov=email_validator
 
   # Provide package with alternative name for backward compatibility
@@ -54,7 +54,7 @@ outputs:
       imports:
         - email_validator
       commands:
-        - email_validator --help
+        - email_validator blah@blah.com
 
 about:
   home: https://github.com/JoshData/python-email-validator
