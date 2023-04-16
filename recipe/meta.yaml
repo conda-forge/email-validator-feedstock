@@ -18,7 +18,7 @@ outputs:
     build:
       noarch: python
       entry_points:
-        - email_validator = email_validator:main
+        - email_validator = email_validator.__main__:main
     script: build_email_validator.sh
     requirements:
       host:
