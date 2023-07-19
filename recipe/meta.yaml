@@ -1,5 +1,5 @@
 {% set name = "email-validator" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.0.post2" %}
 
 package:
   name: {{ name|lower }}-meta
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/email_validator-{{ version }}.tar.gz
-  sha256: f4904f4145c11f8de5897afbb8d7db4b465c57f13db1c8c106c16d02bceebd9a
+  sha256: 1ff6e86044200c56ae23595695c54e9614f4a9551e0e393614f764860b3d7900
 
 build:
   number: 0
