@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/email_validator-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/email_validator-{{ version }}.tar.gz
   sha256: cb690f344c617a714f22e66ae771445a1ceb46821152df8e165c5f9a364582b7
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 outputs:
@@ -22,10 +22,10 @@ outputs:
     script: build_email_validator.sh
     requirements:
       host:
-        - python >=3.7
+        - python {{ python_min }}
         - pip
       run:
-        - python >=3.7
+        - python >={{ python_min }}
         - dnspython >=2.0.0
         - idna >=2.0.0
     test:
@@ -37,6 +37,7 @@ outputs:
         - flake8
         - pytest
         - pytest-cov
+        - python {{ python_min }}
       imports:
         - email_validator
       commands:
