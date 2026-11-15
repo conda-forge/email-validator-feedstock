@@ -40,7 +40,9 @@ outputs:
           imports:
             - email_validator
           pip_check: false
-          python_version: ${{ python_min }}
+          python_version:
+            - ${{ python_min }}
+            - "*"
       - files:
           source:
             - tests
@@ -63,6 +65,8 @@ outputs:
     requirements:
       run:
         - ${{ pin_subpackage('email-validator', upper_bound="x.x.x") }}
+        - dnspython >=2.0.0
+        - idna >=2.0.0
     tests:
       - python:
           imports:
