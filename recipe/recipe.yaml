@@ -65,8 +65,6 @@ outputs:
     requirements:
       run:
         - ${{ pin_subpackage('email-validator', upper_bound="x.x.x") }}
-        - dnspython >=2.0.0
-        - idna >=2.0.0
     tests:
       - python:
           imports:
